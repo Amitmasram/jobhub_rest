@@ -4,15 +4,15 @@ const { verifyAndAuthorization, verifyToken, verifyAndAdmin } = require("../midd
 
 
 // Update User 
-router.put("/:id", verifyAndAuthorization, userController.updateUser);
+router.put("/", verifyAndAuthorization, userController.updateUser);
 
 
 // DELETE USER
-router.delete("/:id", verifyAndAuthorization, userController.deleteUser);
+router.delete("/", verifyAndAuthorization, userController.deleteUser);
 
 
 // GET USER
-router.get("/:id", verifyAndAuthorization, userController.getUser);
+router.get("/", verifyAndAuthorization, userController.getUser);
 
 
 // GET  AllUSER
